@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <div id="Cbody">
+            <h1 class="rainbow">Calculator</h1>
+
+            <div class="calculator">
+
+                <p id="result"></p>
+                <table>
+                    <tr>
+                        <td class="bBody"><button class="buttonSym" onclick="clean()">C</button></td>
+                        <td class="bBody"><button class="buttonSym" onclick="back()">↩</button></td>
+                        <td class="bBody"><button class="buttonSym" onclick="insert('/')">/</button></td>
+                        <td class="bBody"><button class="buttonSym" onclick="insert('*')">*</button></td>
+                    </tr>
+                    <tr>
+                        <td class="bBody"><button class="button" onclick="insert('7')">7</button></td>
+                        <td class="bBody"><button class="button" onclick="insert('8')">8</button></td>
+                        <td class="bBody"><button class="button" onclick="insert('9')">9</button></td>
+                        <td class="bBody"><button class="buttonSym" onclick="insert('-')">-</button></td>
+                    </tr>
+                    <tr>
+                        <td class="bBody"><button class="button" onclick="insert('4')">4</button></td>
+                        <td class="bBody"><button class="button" onclick="insert('5')">5</button></td>
+                        <td class="bBody"><button class="button" onclick="insert('6')">6</button></td>
+                        <td class="bBody"><button class="buttonSym" onclick="insert('+')">+</button></td>
+                    </tr>
+                    <tr>
+                        <td class="bBody"><button class="button" onclick="insert('1')">1</button></td>
+                        <td class="bBody"><button class="button" onclick="insert('2')">2</button></td>
+                        <td class="bBody"><button class="button" onclick="insert('3')">3</button></td>
+                        <td class="bBody" rowspan="2"><button class="buttonSymResult" onclick="mathIt()">=</button></td>
+                    </tr>
+                    <tr>
+                        <td class="bBody" colspan="2"><button class="button" style="width: 11vh"
+                                onclick="insert('0')">0</button></td>
+                        <td class="bBody"><button class="buttonSym" onclick="insert('.')">.</button></td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="src/js/main.js"></script>
+
+</body>
+
+</html>
